@@ -1,0 +1,42 @@
+{
+  "1": {
+    "firstname": "John",
+    "lastname": "Doe",
+    "skills": {
+      "all": "Photoshop, Illustrator"
+    },
+    "web": {
+      "email": "test@cifacom.com",
+      "website": "www.cifacom.com"
+    },
+    "description": "Hello world !",
+    "school": {
+      "id": "1",
+      "abs": "2",
+      "moy": {
+        "1st": "20",
+        "2ns": "18,5"
+      }
+    }
+  },
+  "2": {
+    "firstname": "Alex",
+    "lastname": "Brush",
+    "skills": {
+      "all": "MVC, PHP , Javascript"
+    },
+    "web": {
+      "email": "test@cifacom.com",
+      "website": "www.cifacom.com"
+    },
+    "description": "Hello world ! Je suis une typo.",
+    "school": {
+      "id": "2",
+      "abs": "0",
+      "moy": {
+        "1st": "2",
+        "2ns": "8,5"
+      }
+    }
+  }
+}
