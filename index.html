@@ -2,9 +2,11 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
 		<title>Cifacom IO</title>
 		<script src="js/data.json"></script>
-		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/jquery.mobile-1.4.0.css">
 		<link rel="stylesheet" href="css/jquery.mobile.external-png-1.4.0.css">
 		<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.0.css">
@@ -17,35 +19,57 @@
   		<script src="js/jquery.mobile-1.4.0.js"></script>
 	  	<script>
 	  	$(function(){
-			$("#mypanel").panel("open");
+			//$("#mypanel").panel("open");
 		});
 		</script>
 	</head>
 	<body>
 		
-  		<div data-role="page">
+  		<div data-role="page" id="page">
 	  		<div data-role="panel" id="mypanel">
 			    <ul data-role="listview">
-				    <li>Home</li>
-				    <li>Test</li>
-				    <li>Contact</li>
+			    	<li data-icon="false" class="title">Menu</li>
+				    <li data-icon="home" ><a href="#page" data-transition="slidefade" class ="active">Accueil</a></li>
+				    <li data-icon="user"><a href="#page-profile" data-transition="slide">Mon profile</a></li>
+				    <li data-icon="calendar"><a href="#">Vie scholaire</a></li>
 			    </ul>
 			</div><!-- /panel -->
-	        <div data-role="header">
-	        	<a href="#mypanel">Menu</a>
-	            <h1>My Title</h1>
+	        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+	        	<a href="#mypanel" ></a>
+	            <h1>Accueil</h1>
 	        </div><!-- /header -->
 	 
-	        <div data-role="content" >
+	        <div data-role="content">
 	            <ul data-role="listview" id="data" >
 		            
 	            </ul>
 	        </div><!-- /content -->
 	 
-	        <div data-role="footer">
-	            <h4>My Footer</h4>
-	        </div><!-- /footer -->
- 		<div id="test"></div>
+        </div>
+
+
+        <div data-role="page" id="page-profile">
+	    <div data-role="panel" id="mypanel">
+			    <ul data-role="listview">
+			    	<li data-icon="false" class="title">Menu</li>
+				    <li data-icon="home" ><a href="#page" data-transition="slidefade">Accueil</a></li>
+				    <li data-icon="user"><a href="#page-profile" data-transition="slidefade" class ="active">Mon profile</a></li>
+				    <li data-icon="calendar"><a href="#">Vie scholaire</a></li>
+			    </ul>
+			</div><!-- /panel -->
+	        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+	        	<a href="#mypanel" ></a>
+	            <h1>Mon Profil</h1>
+	        </div><!-- /header -->
+	        <div data-role="content" style="padding:0em!important;">
+		        <div class="profile">
+					efzef
+		        </div>
+	            <ul data-role="listview" id="data" >
+		            
+	            </ul>
+	        </div><!-- /content -->
+	 
         </div>
     
 	</body>
