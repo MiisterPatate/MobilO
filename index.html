@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 		<title>Cifacom IO</title>
 		<script src="js/data.json"></script>
 		<link rel="stylesheet" href="css/style.css">
@@ -25,8 +26,8 @@
 	</head>
 	<body>
 		
-  		<div data-role="page" id="page">
-	  		<div data-role="panel" id="mypanel">
+  		<div data-role="page" class="removeshadow" id="page">
+	  		<div data-role="panel" id="HomeMenu" class="menu">
 			    <ul data-role="listview">
 			    	<li data-icon="false" class="title">Menu</li>
 				    <li data-icon="home" ><a href="#page" data-transition="slidefade" class ="active">Accueil</a></li>
@@ -35,7 +36,7 @@
 			    </ul>
 			</div><!-- /panel -->
 	        <div data-role="header" data-position="fixed" data-tap-toggle="false">
-	        	<a href="#mypanel" ></a>
+	        	<a href="#HomeMenu" ></a>
 	            <h1>Accueil</h1>
 	        </div><!-- /header -->
 	 
@@ -48,8 +49,8 @@
         </div>
 
 
-        <div data-role="page" id="page-profile">
-	    <div data-role="panel" id="mypanel">
+        <div data-role="page" class="removeshadow" id="page-profile">
+	    <div data-role="panel" id="ProfileMenu" class="menu">
 			    <ul data-role="listview">
 			    	<li data-icon="false" class="title">Menu</li>
 				    <li data-icon="home" ><a href="#page" data-transition="slidefade">Accueil</a></li>
@@ -58,7 +59,7 @@
 			    </ul>
 			</div><!-- /panel -->
 	        <div data-role="header" data-position="fixed" data-tap-toggle="false">
-	        	<a href="#mypanel" ></a>
+	        	<a href="#ProfileMenu"></a>
 	            <h1>Mon Profil</h1>
 	        </div><!-- /header -->
 	        <div data-role="content" style="padding:0em!important;">

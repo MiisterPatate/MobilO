@@ -8,10 +8,9 @@ $(document).ready(function(){
              
 		})
 	});
-
-
 		
 });
+
 
 /*	
 		$( ".ui-panel-inner" ).append( "<ul data-role='listview' class='ui-listview'><li>" + val.firstname + " " + val.lastname + "<li></ul>" );
@@ -32,5 +31,17 @@ $(document).ready(function(){
 //     });
 // });
 
-
+		$.getJSON("http://api.flickr.com/services/feeds/photoset.gne?set=72157622756380931&nsid=38798812@N05&lang=en-us&format=json&jsoncallback=?",
+  			function(data) {
+  				var x = Math.floor((Math.random()*19)+0);
+  			
+				//$("<img/>").attr({src: data.items[x].media.m.replace('_m.','.')}).appendTo(".login-container");	
+                  console.log(data.items[x].media.m);
+                  $('.bg-container').css({'background':'url('+data.items[x].media.m + ')','background-repeat':'no-repeat','background-size':'cover'});
+                  console.log(data.items)
+  		     });
+  		     $(function(){
+  		     	$('#glogin').addClass('animated fadeInUp');
+  		     });
+  		     
 

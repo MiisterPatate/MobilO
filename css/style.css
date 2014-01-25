@@ -13,13 +13,13 @@
 }
 
 /* Reveal menu shadow on top of the list items */
-#page .ui-panel-display-reveal { 
+.removeshadow .ui-panel-display-reveal { 
  -webkit-box-shadow: none; 
  -moz-box-shadow: none; 
  box-shadow: none; 
  }
 
-#page .ui-panel-content-wrap-position-left { 
+.removeshadow .ui-panel-content-wrap-position-left { 
  -webkit-box-shadow: -5px 0px 5px rgba(0,0,0,.15); 
  -moz-box-shadow: -5px 0px 5px rgba(0,0,0,.15); 
  box-shadow: -5px 0px 5px rgba(0,0,0,.15); 
@@ -66,40 +66,45 @@ margin: 0 !important;
 	color: #fff;
 	text-shadow:none;
 }
-#mypanel{
-	background: #333333;
+.menu{
+	background: #333333!important;
 }
-#mypanel ul{
-	background: #333333;
+.menu ul{
+	background: #333333!important;
 }
-#mypanel ul li{
+.menu ul li{
 	padding:3px;
 }
-#mypanel ul li.title{
+.menu ul li.title{
 	background-image:url(../images/bg.png)!important;
 	text-align: center;
 	font-weight: bold;
 	color:#fff;
-	height: 42px;
-	line-height: 42px;
+	height: 26px;
+	line-height: 26px;
+	border-top: none;
 }
-#mypanel ul li a {
-	width:80%;
-	height:20px;
-	background:#333333;
-	border-radius: 5px;
-	color: #fff;
-	box-shadow: none;
-	border: none;
-	font-weight: normal;
-	text-shadow:none;
-	margin: 0 auto 0;
+.menu ul li a {
+	display: block;
+	width:80%!important;
+	height:20px!important;
+	background:#333333!important;
+	border-radius: 5px!important;
+	color: #fff!important;
+	box-shadow: none!important;
+	border: none!important;
+	font-weight: normal!important;
+	text-shadow:none!important;
+	margin: 0 auto 0!important;
 }
-#mypanel ul li a.active{
-	background:  #2f2f2f;
+.menu ul li a.active{
+	background:  #2f2f2f !important;
+	box-shadow: inset 0px 0px 7px 0px rgba(0, 0, 0, 0.1)!important;
+-moz-box-shadow: inset 0px 0px 7px 0px rgba(0, 0, 0, 0.1)!important;
+-webkit-box-shadow: inset 0px 0px 7px 0px rgba(0, 0, 0, 0.1)!important;
 }
 
-#mypanel ul li:not(:first-child){
+.menu ul li:not(:first-child){
     /*background: #2b2b2b;*/
 	color: #fff;
 	border-color: #727272 !important;
@@ -112,3 +117,38 @@ margin: 0 !important;
 	background:black;
 }
 /*.ui-page { -webkit-backface-visibility: hidden; }*/
+
+/*Login page style*/
+.bg-container{
+	background-position: center center;
+	width:100%;
+	min-height:500px;
+	-webkit-filter: blur(5px);
+}
+.logo-container{
+	position: absolute;
+	top: 20%;
+	left: 13%;
+	background: rgba(255,255,255,1);
+	padding: 2%;
+	padding: 8px;
+}
+.logo-container img{
+	margin:0 auto 0;
+	display: block;
+}
+#glogin{
+	border:none !important;
+	background-color: #e26350 !important;
+	width: 80%!important;
+	color:#fff!important;
+	text-shadow:none!important;
+	height:40px;
+	text-align: center;
+	line-height: 40px;
+	margin:20% auto 0;
+	position: absolute;
+	top:150%;
+	left: 10%;
+}
+
