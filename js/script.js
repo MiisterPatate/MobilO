@@ -7,8 +7,7 @@ $(document).ready(function(){
 			$( "#data" ).append( "<li>" + val.firstname + " " + val.lastname + "<li>" );
              
 		})
-	});
-		
+	});		
 });
 
 
@@ -38,10 +37,12 @@ $(document).ready(function(){
 				//$("<img/>").attr({src: data.items[x].media.m.replace('_m.','.')}).appendTo(".login-container");	
                   console.log(data.items[x].media.m);
                   $('.bg-container').css({'background':'url('+data.items[x].media.m + ')','background-repeat':'no-repeat','background-size':'cover'});
+                  //$('.bg-container').append('<img src="'+ data.items[x].media.m +'" width="100%" height="100%" />')
                   console.log(data.items)
   		     });
   		     $(function(){
   		     	$('#glogin').addClass('animated fadeInUp');
-  		     });
+  	});
+
   		     
 

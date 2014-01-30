@@ -1,10 +1,10 @@
 var accessToken;
-var result ={};
+var result =[];
+var scopes = new Array('https://www.googleapis.com/auth/userinfo.profile','https://www.googleapis.com/auth/userinfo.email','https://www.googleapis.com/auth/calendar');
 var config = {
     'client_id': '641392901513.apps.googleusercontent.com',
-    'scope': 'https://www.googleapis.com/auth/userinfo.profile',
-     'scope': 'https://www.googleapis.com/auth/userinfo.email',
-};    
+    'scope': scopes,
+};   
  
 function auth() {
  
@@ -40,17 +40,17 @@ function getUserInfo() {
         data: null,
         success: function(response) {
             console.log('We have gotten info back....');
-            console.log(response);
-            $('#glogin').html(response.name);
             result.name = response.name;
             result.mail = response.email;
             result.avatar = response.picture;
             result.id = response.id;
+            result.domain = response.hd
             console.log(result);
             
         },
         dataType: "jsonp"
     });
+
 }
 
 $(function(){
