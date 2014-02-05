@@ -1,5 +1,5 @@
 var accessToken;
-var result =[];
+var result ={};
 var scopes = new Array('https://www.googleapis.com/auth/userinfo.profile','https://www.googleapis.com/auth/userinfo.email','https://www.googleapis.com/auth/calendar');
 var config = {
     'client_id': '641392901513.apps.googleusercontent.com',
@@ -45,7 +45,14 @@ function getUserInfo() {
             result.avatar = response.picture;
             result.id = response.id;
             result.domain = response.hd
-            console.log(result);
+            if (result.domain == "cifacom.com"){
+                $.session.set('usr', result.name);
+                $.session.set('id', result.id);
+                $.session.set('avatar', result.avatar);
+                location.reload();
+            }else{
+                alert('Seulment pour les étudiants de CIFACOM');
+            }
             
         },
         dataType: "jsonp"

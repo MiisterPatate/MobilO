@@ -17,10 +17,37 @@
 		<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.0.css">
 		<link rel="stylesheet" href="css/jquery.mobile.theme-1.4.0.css">
 		<script src="js/JQuery1.10.2.js"></script>
+		<script src="js/jquery.session.js"></script>
+		<script src="js/jquery.toastmessage.js"></script>
 		<script src="js/script.js"></script>
 		<script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
-		<script src="js/gconnect.js"></script>
+		<script type="text/javascript" src="js/gconnect.js"></script>
   		<script src="js/jquery.mobile-1.4.0.js"></script>
+  		<script>
+  			$(function(){
+  				var ifUser =$.session.get('usr');
+  				var ifId = $.session.get('id');
+  				if ($.session.get('avatar')){
+
+  					var ifAvatar = $.session.get('avatar').split("?")[0];
+
+  				}else{
+
+  					var ifAvatar = "/images/no-profile.jpg";
+
+  				}
+  				
+  				var showDiv = '<div class="avatar"><img src="'+ ifAvatar +'" /></div>' 
+  				if(ifId && ifUser){
+  					$('.logo').hide();
+  					$('.logo-container').css({borderRadius:'200px',width:'200px',height:'200px'});
+  					$('.logo-container').append(showDiv).addClass('shadow animated fadeInUp');
+  					$('#glogin').unbind('click');
+  					$('#glogin').html('<h1>Bienvenue</h1><br/><p>'+ ifUser +'</p>').css({"line-height":"0px"});
+  				};
+  				
+  			});
+  		</script>
 	</head>
 	<body>
 		
@@ -29,7 +56,7 @@
 	        <div data-role="content" style="padding:0px;">
 	            <div class="bg-container"></div>
 	            <div class="logo-container">
-	            	<img src="images/logo.png" alt="logo">
+	            	<img class="logo" src="images/logo.png" alt="logo">
 	            </div>
 	            <div id="glogin">SE CONNECTER</div>
 
