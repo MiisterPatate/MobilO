@@ -32,7 +32,9 @@
 			    	<li data-icon="false" class="title">Menu</li>
 				    <li data-icon="home" ><a href="#page" data-transition="slidefade" class ="active">Accueil</a></li>
 				    <li data-icon="user"><a href="#page-profile" data-transition="slide">Mon profile</a></li>
-				    <li data-icon="calendar"><a href="#">Vie scholaire</a></li>
+				    <li data-icon="calendar"><a href="#calendar">Calendrier</a></li>
+				    <li data-icon="search"><a href="#search">
+				    Recherche</a></li>
 			    </ul>
 			</div><!-- /panel -->
 	        <div data-role="header" data-position="fixed" data-tap-toggle="false">
@@ -41,9 +43,30 @@
 	        </div><!-- /header -->
 	 
 	        <div data-role="content">
-	            <ul data-role="listview" id="data" >
-		            
-	            </ul>
+	            <div class="home">
+	            	<a href="#page-profile">
+	            		<img src="images/icon-user.gif" alt="profil" />
+	            		<p>Profil</p>
+	            	</a>
+	            </div>
+		        <div class="home">
+	            	<a href="#calendar">
+	            		<img src="images/icon-calendar.gif" alt="calendrier" />
+	            		<p>Calendrier</p>
+	            	</a>
+	            </div>
+	            <div class="home">
+	            	<a href="#event">
+	            		<img src="images/icon-exclamation.gif" alt="événements" style="width: 6.4% !important;" />
+	            		<p>Événements</p>
+	            	</a>
+	            </div>
+	            <div class="home">
+	            	<a href="#search">
+	            		<img src="images/icon-search.gif" alt="étudiants" />
+	            		<p>Étudiants</p>
+	            	</a>
+	            </div>
 	        </div><!-- /content -->
 	 
         </div>
@@ -55,7 +78,12 @@
 			    	<li data-icon="false" class="title">Menu</li>
 				    <li data-icon="home" ><a href="#page" data-transition="slidefade">Accueil</a></li>
 				    <li data-icon="user"><a href="#page-profile" data-transition="slidefade" class ="active">Mon profile</a></li>
-				    <li data-icon="calendar"><a href="#">Vie scholaire</a></li>
+				    <li data-icon="calendar"><a href="#calendar">
+				    Calendrier</a></li>
+				    <li data-icon="clock"><a href="#event">
+				    Événements</a></li>
+				    <li data-icon="search"><a href="#search">
+				    Recherche</a></li>
 			    </ul>
 			</div><!-- /panel -->
 	        <div data-role="header" data-position="fixed" data-tap-toggle="false">
@@ -64,11 +92,131 @@
 	        </div><!-- /header -->
 	        <div data-role="content" style="padding:0em!important;">
 		        <div class="profile">
-					efzef
+					<img src="images/wooman.png" alt="man" />
+					<p class="name-profil">Jean-françoise Dellord</p>
 		        </div>
-	            <ul data-role="listview" id="data" >
-		            
-	            </ul>
+	            <div data-role="tabs" id="tabs">
+				  <div data-role="navbar">
+				    <ul>
+				      <li><a href="#one" data-ajax="false">one</a></li>
+				      <li><a href="#two" data-ajax="false">two</a></li>
+				      <li><a href="#three" data-ajax="false">three</a></li>
+				    </ul>
+				  </div>
+				  <div id="one" class="ui-body-d ui-content">
+				    <h2>First tab contents</h2>
+				  </div>
+				  <div id="two">
+				    <ul data-role="listview" data-inset="true">
+				        <li><a href="#">Acura</a></li>
+				        <li><a href="#">Audi</a></li>
+				        <li><a href="#">BMW</a></li>
+				        <li><a href="#">Cadillac</a></li>
+				        <li><a href="#">Ferrari</a></li>
+				    </ul>
+				  </div>
+				   <div id="three">
+				    <h3>Three bi***es</h3>
+				  </div>
+				</div>
+	        </div><!-- /content -->
+	 
+        </div>
+
+
+        <div data-role="page" class="removeshadow" id="calendar">
+	    <div data-role="panel" id="ProfileMenu" class="menu">
+			    <ul data-role="listview">
+			    	<li data-icon="false" class="title">Menu</li>
+				    <li data-icon="home" ><a href="#page" data-transition="slidefade">Accueil</a></li>
+				    <li data-icon="user"><a href="#page-profile">Mon profile</a></li>
+				    <li data-icon="calendar"><a href="#calendar"data-transition="slidefade" class ="active">
+				    Calendrier</a></li>
+				    <li data-icon="clock"><a href="#event">
+				    Événements</a></li>
+				    <li data-icon="search"><a href="#search">
+				    Recherche</a></li>
+			    </ul>
+			</div><!-- /panel -->
+	        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+	        	<a href="#ProfileMenu"></a>
+	            <h1>Mon Calendrier</h1>
+	        </div><!-- /header -->
+	        <div data-role="content" style="padding:0em!important;">
+		        <div class="calendar">
+					<iframe src="http://www.google.com/calendar/embed?src=webschoolfactory.com_4tvjqka8p2lr28ed7h54h6cqf0%40group.calendar.google.com&ctz=Europe/Paris" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no" class="calendrier"></iframe>
+		        </div>
+	            
+	        </div><!-- /content -->
+	 
+        </div>
+
+
+        <div data-role="page" class="removeshadow" id="event">
+	    <div data-role="panel" id="ProfileMenu" class="menu">
+			    <ul data-role="listview">
+			    	<li data-icon="false" class="title">Menu</li>
+				    <li data-icon="home" ><a href="#page" data-transition="slidefade">Accueil</a></li>
+				    <li data-icon="user"><a href="#page-profile">Mon profile</a></li>
+				    <li data-icon="calendar"><a href="#calendar">
+				    Calendrier</a></li>
+				    <li data-icon="clock"><a href="#event" data-transition="slidefade" class ="active">
+				    Événements</a></li>
+				    <li data-icon="search"><a href="#search">
+				    Recherche</a></li>
+			    </ul>
+			</div><!-- /panel -->
+	        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+	        	<a href="#ProfileMenu"></a>
+	            <h1>Événement</h1>
+	        </div><!-- /header -->
+	        <div data-role="content" style="padding:0em!important;">
+		        <div class="event">
+					<ul data-role="listview" data-filter="true" data-filter-placeholder="Search fruits..." data-inset="true">
+				    <li><a href="#">troll</a></li>
+				    <li><a href="#">Banana</a></li>
+				    <li><a href="#">Cherry</a></li>
+				    <li><a href="#">Cranberry</a></li>
+				    <li><a href="#">chu</a></li>
+				    <li><a href="#">Orange</a></li>
+				</ul>
+		        </div>
+	            
+	        </div><!-- /content -->
+	 
+        </div>
+
+
+        <div data-role="page" class="removeshadow" id="search">
+	    <div data-role="panel" id="ProfileMenu" class="menu">
+			    <ul data-role="listview">
+			    	<li data-icon="false" class="title">Menu</li>
+				    <li data-icon="home" ><a href="#page" data-transition="slidefade">Accueil</a></li>
+				    <li data-icon="user"><a href="#page-profile">Mon profile</a></li>
+				    <li data-icon="calendar"><a href="#calendar">
+				    Calendrier</a></li>
+				    <li data-icon="clock"><a href="#event">
+				    Événements</a></li>
+				    <li data-icon="search"><a href="#search" data-transition="slidefade" class ="active">
+				    Recherche</a></li>
+			    </ul>
+			</div><!-- /panel -->
+	        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+	        	<a href="#ProfileMenu"></a>
+	            <h1>Recherche</h1>
+	        </div><!-- /header -->
+	        <div data-role="content" style="padding:0em!important;">
+		        <div class="search">
+					<ul data-role="listview" data-filter="true" data-filter-placeholder="Search fruits..." data-inset="true">
+					    <li><a href="#">Apple</a></li>
+					    <li><a href="#">Banana</a></li>
+					    <li><a href="#">Cherry</a></li>
+					    <li><a href="#">Cranberry</a></li>
+					    <li><a href="#">coup</a></li>
+					    <li><a href="#">Orange</a></li>
+					</ul>
+		        </div>
+	            
 	        </div><!-- /content -->
 	 
         </div>
