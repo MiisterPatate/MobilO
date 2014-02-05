@@ -92,6 +92,8 @@ margin: 0 !important;
 	height: 26px;
 	line-height: 26px;
 	border-top: none;
+	text-shadow: none !important;
+	margin-top: -16px !important;
 }
 .menu ul li a {
 	display: block;
@@ -123,17 +125,21 @@ margin: 0 !important;
 .profile{
 	width:100%;
 	min-height: 200px;
-	color: #1D1D1D !important;
-	font-weight: 500;
+	color: #fff !important;
+	font-weight: 300;
 	text-shadow: none !important;
 	text-align: center;
 	padding-top: 30px;
+	background: #e26350;
 }
 
 .name-profil{
 	font-size: 18px !important;
 }
 /*.ui-page { -webkit-backface-visibility: hidden; }*/
+.ui-page {
+	background: url('../images/sos.png') !important; 
+}
 
 /*Login page style*/
 .bg-container{
@@ -238,4 +244,90 @@ margin: 0 !important;
 	margin-top: 18px !important;
 	margin-bottom: 15px !important;
 	font-size: 19px !important;
+}
+
+.notif{
+	background: #fff;
+	text-shadow: none !important;
+	margin: 0 1% 0 2%;
+	max-width: 94%;
+	padding: 12px 8px 12px 8px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #D3D3D3;
+	text-align: center;
+}
+
+ul.notification{
+	list-style: none;
+	text-align: left;
+	margin: 0;
+	padding-left: 14px !important;
+}
+
+ul.notification li:before{
+	content: "\00BB \0020";
+	color: #e26350;
+	font-size: 18px;
+}
+
+ul.notification li{
+	padding-bottom: 2px;
+	padding-top: 2px;
+	font-size: 14px;
+}
+
+/* Page profil */
+.ui-page-theme-a .ui-btn.ui-btn-active{
+	background: #e26350 !important;
+	border: none !important;
+	outline: none !important;
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-ms-box-shadow: none !important;
+}
+
+.ui-state-active > a, .ui-state-focus  > a, .ui-btn-active > a{
+	box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-ms-box-shadow: none !important;
+	text-shadow: none !important;
+}
+
+#tabs{
+	margin-top: -21px !important;
+	padding: 0 !important;
+}
+
+.avatar-profil img{
+	width: 100%;
+	height: 100%;
+}
+
+.avatar-profil{
+	width:120px;
+	height: 120px;
+	border-radius: 120px;
+	margin: 0 auto 0;
+	overflow: hidden;
+	border: 6px solid #fff;
+}
+
+.ui-listview{
+	margin-top: -2px !important;
+	border-top: none !important;
+}
+
+a.ui-btn{
+	font-weight: normal !important;
+}
+
+#tabs .ui-btn-icon-right:after{
+	background-color: #e26350 !important;
 }

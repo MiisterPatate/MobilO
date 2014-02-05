@@ -43,6 +43,16 @@
 	        </div><!-- /header -->
 	 
 	        <div data-role="content">
+
+	        <div class="notif">
+	        	Mes notifications
+	        	<ul class="notification">
+	        		<li>Abscence 5</li>
+	        		<li>Prochain cours dans 3 min</li>
+	        		<li>Bachir cours plus vite</li>
+	        	</ul>
+	        </div>
+
 	            <div class="home">
 	            	<a href="#page-profile">
 	            		<img src="images/icon-user.gif" alt="profil" />
@@ -92,31 +102,32 @@
 	        </div><!-- /header -->
 	        <div data-role="content" style="padding:0em!important;">
 		        <div class="profile">
-					<img src="images/wooman.png" alt="man" />
+					<div class="avatar-profil"><img src="images/wooman.png" alt="man" /></div>
 					<p class="name-profil">Jean-françoise Dellord</p>
 		        </div>
 	            <div data-role="tabs" id="tabs">
 				  <div data-role="navbar">
 				    <ul>
-				      <li><a href="#one" data-ajax="false">one</a></li>
-				      <li><a href="#two" data-ajax="false">two</a></li>
-				      <li><a href="#three" data-ajax="false">three</a></li>
+				      <li><a href="#one" data-ajax="false" class="ui-btn-active">Information</a></li>
+				      <li><a href="#two" data-ajax="false">Compétence</a></li>
+				      <li><a href="#three" data-ajax="false">Réseaux sociaux</a></li>
 				    </ul>
 				  </div>
-				  <div id="one" class="ui-body-d ui-content">
-				    <h2>First tab contents</h2>
+				  <div id="one" class="ui-block-a ui-state-default ui-corner-top ui-tabs-active ui-state-active">
+				    <h2>Ma description</h2>
+				    <p>Enim auctor risus, purus enim montes dictumst pellentesque augue. Purus cras augue proin pid sed penatibus ultricies dapibus et ultrices amet sagittis adipiscing rhoncus velit lundium amet purus rhoncus sit, hac cursus? Aliquet! Velit odio phasellus pulvinar vel porttitor et dolor magna, tortor? Risus, turpis? Proin sagittis dolor, dignissim porttitor massa turpis magna facilisis vel nascetur? Lundium, ut nisi in, et lectus purus? Massa auctor! Turpis dictumst pellentesque? In eu, eros porttitor, auctor turpis phasellus auctor a augue porta auctor vel tortor scelerisque urna! Vut? Arcu elit rhoncus. Magnis. Auctor sagittis augue? Ridiculus eros tempor mus! Sagittis pulvinar. Ac et adipiscing dapibus ac dapibus dis tincidunt rhoncus sit! Etiam dis turpis! Magna, elementum tristique tincidunt enim aliquam! Lundium, ac mus.</p>
 				  </div>
 				  <div id="two">
 				    <ul data-role="listview" data-inset="true">
-				        <li><a href="#">Acura</a></li>
-				        <li><a href="#">Audi</a></li>
-				        <li><a href="#">BMW</a></li>
-				        <li><a href="#">Cadillac</a></li>
-				        <li><a href="#">Ferrari</a></li>
+				        <li><a href="#">HTML / CSS <span class="star"></span></a></li>
+				        <li><a href="#">JavaScript <span class="star"></span></a></li>
+				        <li><a href="#">PHP / MySQL <span class="star"></span></a></li>
+				        <li><a href="#">Wordpress <span class="star"></span></a></li>
+				        <li><a href="#">Typo 3 <span class="star"></span></a></li>
 				    </ul>
 				  </div>
 				   <div id="three">
-				    <h3>Three bi***es</h3>
+				    <h3></h3>
 				  </div>
 				</div>
 	        </div><!-- /content -->
@@ -125,7 +136,7 @@
 
 
         <div data-role="page" class="removeshadow" id="calendar">
-	    <div data-role="panel" id="ProfileMenu" class="menu">
+	    <div data-role="panel" id="calendar_menu" class="menu">
 			    <ul data-role="listview">
 			    	<li data-icon="false" class="title">Menu</li>
 				    <li data-icon="home" ><a href="#page" data-transition="slidefade">Accueil</a></li>
@@ -139,7 +150,7 @@
 			    </ul>
 			</div><!-- /panel -->
 	        <div data-role="header" data-position="fixed" data-tap-toggle="false">
-	        	<a href="#ProfileMenu"></a>
+	        	<a href="#calendar_menu"></a>
 	            <h1>Mon Calendrier</h1>
 	        </div><!-- /header -->
 	        <div data-role="content" style="padding:0em!important;">
@@ -153,7 +164,7 @@
 
 
         <div data-role="page" class="removeshadow" id="event">
-	    <div data-role="panel" id="ProfileMenu" class="menu">
+	    <div data-role="panel" id="event_menu" class="menu">
 			    <ul data-role="listview">
 			    	<li data-icon="false" class="title">Menu</li>
 				    <li data-icon="home" ><a href="#page" data-transition="slidefade">Accueil</a></li>
@@ -167,7 +178,7 @@
 			    </ul>
 			</div><!-- /panel -->
 	        <div data-role="header" data-position="fixed" data-tap-toggle="false">
-	        	<a href="#ProfileMenu"></a>
+	        	<a href="#event_menu"></a>
 	            <h1>Événement</h1>
 	        </div><!-- /header -->
 	        <div data-role="content" style="padding:0em!important;">
@@ -188,7 +199,7 @@
 
 
         <div data-role="page" class="removeshadow" id="search">
-	    <div data-role="panel" id="ProfileMenu" class="menu">
+	    <div data-role="panel" id="search_menu" class="menu">
 			    <ul data-role="listview">
 			    	<li data-icon="false" class="title">Menu</li>
 				    <li data-icon="home" ><a href="#page" data-transition="slidefade">Accueil</a></li>
@@ -202,7 +213,7 @@
 			    </ul>
 			</div><!-- /panel -->
 	        <div data-role="header" data-position="fixed" data-tap-toggle="false">
-	        	<a href="#ProfileMenu"></a>
+	        	<a href="#search_menu"></a>
 	            <h1>Recherche</h1>
 	        </div><!-- /header -->
 	        <div data-role="content" style="padding:0em!important;">
