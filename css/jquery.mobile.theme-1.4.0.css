@@ -74,7 +74,9 @@ div.ui-controlgroup-label {
 .ui-btn,
 label.ui-btn {
 	font-weight: bold;
-	border-width: 1px;
+	/*border-width: 1px;*/
+	/* Modification du 5 fevrier par christophe */
+	border: none !important;
 	border-style: solid;
 }
 .ui-btn:link {
@@ -87,8 +89,8 @@ label.ui-btn {
 -----------------------------------------------------------------------------------------------------------*/
 /* Class ui-btn-corner-all deprecated in 1.4 */
 .ui-corner-all {
-	-webkit-border-radius: 				.3125em /*{global-radii-blocks}*/;
-	border-radius: 						.3125em /*{global-radii-blocks}*/;
+	/*-webkit-border-radius: 				.3125em /*{global-radii-blocks};
+	border-radius: 						.3125em /*{global-radii-blocks};*/
 }
 /* Buttons */
 .ui-btn-corner-all,
@@ -99,8 +101,8 @@ label.ui-btn {
 .ui-flipswitch.ui-corner-all,
 /* Count bubble */
 .ui-li-count {
-	-webkit-border-radius: 				.3125em /*{global-radii-buttons}*/;
-	border-radius: 						.3125em /*{global-radii-buttons}*/;
+	/*-webkit-border-radius: 				.3125em /*{global-radii-buttons};
+	border-radius: 						.3125em /*{global-radii-buttons};*/
 }
 /* Icon-only buttons */
 .ui-btn-icon-notext.ui-btn-corner-all,
@@ -116,28 +118,14 @@ label.ui-btn {
 }
 /* Popup arrow */
 .ui-popup.ui-corner-all > .ui-popup-arrow-guide {
-	left: .6em /*{global-radii-blocks}*/;
-	right: .6em /*{global-radii-blocks}*/;
-	top: .6em /*{global-radii-blocks}*/;
-	bottom: .6em /*{global-radii-blocks}*/;
+	/*left: .6em /*{global-radii-blocks}*/;
+	/*right: .6em /*{global-radii-blocks}*/;
+	/*top: .6em /*{global-radii-blocks}*/;
+	/*bottom: .6em /*{global-radii-blocks}*/;
 }
 /* Shadow
 -----------------------------------------------------------------------------------------------------------*/
-.ui-shadow {
-	-webkit-box-shadow: 0 1px 3px /*{global-box-shadow-size}*/ 		rgba(0,0,0,.15) /*{global-box-shadow-color}*/;
-	-moz-box-shadow: 0 1px 3px /*{global-box-shadow-size}*/ 		rgba(0,0,0,.15) /*{global-box-shadow-color}*/;
-	box-shadow: 0 1px 3px /*{global-box-shadow-size}*/ 				rgba(0,0,0,.15) /*{global-box-shadow-color}*/;
-}
-.ui-shadow-inset {
-	-webkit-box-shadow: inset 0 1px 3px /*{global-box-shadow-size}*/ 	rgba(0,0,0,.2) /*{global-box-shadow-color}*/;
-	-moz-box-shadow: inset 0 1px 3px /*{global-box-shadow-size}*/ 		rgba(0,0,0,.2) /*{global-box-shadow-color}*/;
-	box-shadow: inset 0 1px 3px /*{global-box-shadow-size}*/ 	rgba(0,0,0,.2) /*{global-box-shadow-color}*/;
-}
-.ui-overlay-shadow {
-	-webkit-box-shadow: 0 0 12px 		rgba(0,0,0,.6);
-	-moz-box-shadow: 0 0 12px 			rgba(0,0,0,.6);
-	box-shadow: 0 0 12px 				rgba(0,0,0,.6);
-}
+
 /* Icons
 -----------------------------------------------------------------------------------------------------------*/
 .ui-btn-icon-left:after,

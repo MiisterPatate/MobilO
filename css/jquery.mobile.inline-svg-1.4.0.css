@@ -441,11 +441,11 @@ label.ui-btn {
 }
 /* Corner rounding
 -----------------------------------------------------------------------------------------------------------*/
-/* Class ui-btn-corner-all deprecated in 1.4 */
+/* Class ui-btn-corner-all deprecated in 1.4 
 .ui-corner-all {
-	-webkit-border-radius: 				.3125em /*{global-radii-blocks}*/;
-	border-radius: 						.3125em /*{global-radii-blocks}*/;
-}
+	-webkit-border-radius: 				.3125em /*{global-radii-blocks};
+	border-radius: 						.3125em /*{global-radii-blocks};
+}*/
 /* Buttons */
 .ui-btn-corner-all,
 .ui-btn.ui-corner-all,
@@ -454,16 +454,16 @@ label.ui-btn {
 /* Flipswitch */
 .ui-flipswitch.ui-corner-all,
 /* Count bubble */
-.ui-li-count {
-	-webkit-border-radius: 				.3125em /*{global-radii-buttons}*/;
-	border-radius: 						.3125em /*{global-radii-buttons}*/;
-}
+/*.ui-li-count {
+	-webkit-border-radius: 				.3125em /*{global-radii-buttons};
+	border-radius: 						.3125em /*{global-radii-buttons};
+}*/
 /* Icon-only buttons */
-.ui-btn-icon-notext.ui-btn-corner-all,
+/*.ui-btn-icon-notext.ui-btn-corner-all,
 .ui-btn-icon-notext.ui-corner-all {
 	-webkit-border-radius: 1em;
 	border-radius: 1em;
-}
+}*/
 /* Radius clip workaround for cleaning up corner trapping */
 .ui-btn-corner-all,
 .ui-corner-all {

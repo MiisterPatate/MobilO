@@ -292,6 +292,10 @@ ul.notification li{
 	-ms-box-shadow: none !important;
 }
 
+.ui-btn , label.ui-btn{
+	border: !important;
+}
+
 .ui-state-active > a, .ui-state-focus  > a, .ui-btn-active > a{
 	box-shadow: none !important;
 	-webkit-box-shadow: none !important;
@@ -301,7 +305,7 @@ ul.notification li{
 }
 
 #tabs{
-	margin-top: -21px !important;
+	margin-top: -18px !important;
 	padding: 0 !important;
 }
 
@@ -330,4 +334,48 @@ a.ui-btn{
 
 #tabs .ui-btn-icon-right:after{
 	background-color: #e26350 !important;
+}
+
+.modif > p , .modif h2{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.ui-corner-all{
+	border-radius: none !important;
+	-webkit-border-radius: none !important;
+	-moz-border-radius: none !important;
+	-ms-border-radius: none !important;
+}
+
+ul.rs{
+	position: relative;
+	left: 0;
+	display: block;
+	margin-left: -43px !important;
+	margin-top: 6px !important;
+	width: 100%;
+	background: #fff;
+	display: block;
+}
+
+ul.rs li{
+	list-style-type: none;
+	margin-top: -11px;
+	clear: both;
+}
+
+ul.rs li a{
+	width: 60% !important;
+	display: inline-block;
+	margin-top: 24px;
+}
+
+ul.rs li img{
+	margin-right: 18px; 
+	float: left;
+}
+
+.ui-navbar ul{
+	z-index: 5 !important;
 }
