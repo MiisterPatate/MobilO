@@ -42,7 +42,11 @@
   					$('.logo-container').css({borderRadius:'200px',width:'200px',height:'200px'});
   					$('.logo-container').append(showDiv).addClass('shadow animated fadeInUp');
   					$('#glogin').unbind('click');
-  					$('#glogin').html('<h1>Bienvenue</h1><br/><p>'+ ifUser +'</p>').css({"line-height":"0px"});
+  					$('#glogin').html('<h1>Bienvenue</h1><br/><p>'+ ifUser +'</p>').css({"line-height":"0px",bottom:"20%"});
+  					//$('<div class="login-link" data-ajax="false"><a href="index.html">Menu</a></div>').insertAfter('#glogin');
+  					setTimeout(function() {
+  						window.location.href = "index.html";
+					}, 4000);
   				};
   				
   			});

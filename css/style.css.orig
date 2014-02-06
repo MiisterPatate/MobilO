@@ -384,6 +384,11 @@ ul.rs li img{
 .ui-navbar ul{
 	z-index: 5 !important;
 }
+<<<<<<< Updated upstream
+
+#one{
+	background: #fff;
+=======
 .login-link{
     line-height: 55px;
 	margin:0 auto 1px;
@@ -395,13 +400,10 @@ ul.rs li img{
 	background: #e26350;
 	text-align: center;
 }
-
 .login-link a{
 	text-shadow:none!important;
 	font-size: 15px !important;;
 	display: block !important;
 	color: #fff!important;
-}
-#one{
-	background: #fff;
+>>>>>>> Stashed changes
 }

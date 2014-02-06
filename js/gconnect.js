@@ -51,9 +51,6 @@ function getUserInfo() {
                 $.session.set('id', result.id);
                 $.session.set('avatar', result.avatar);
                 location.reload();
-                  setTimeout(function () {
-                     window.location.href = "index.html#page"; //will redirect to your blog page (an ex: blog.html)
-}               , 2000); //will call the function after 2 secs.
             }else{
                 alert('Seulment pour les étudiants de CIFACOM');
             }
@@ -66,11 +63,13 @@ function getUserInfo() {
         data: null,
         success: function(calendar) {
             console.log(calendar)
+            var $calendar = new Array();
             for (var i=0; i<=50; i++){
-               console.log(calendar.items[i].summary); 
-               $( "ul.calendrier-din" ).append( "<li>"+calendar.item[i].summary+"</li>" );
+               //console.log(calendar.items[i].summary); 
+               //$( "ul.calendrier-din" ).append( "<li>"+calendar.item[i].summary+"</li>" );
+               $calendar.push(calendar.items[i].summary);
             }
-            
+            console.log($calendar);
             
         },
         dataType: "jsonp"
