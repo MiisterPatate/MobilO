@@ -32,7 +32,7 @@
 			    <ul data-role="listview">
 			    	<li data-icon="false" class="title">Menu</li>
 				    <li data-icon="home" ><a href="#page" data-transition="slidefade" class ="active">Accueil</a></li>
-				    <li data-icon="user"><a href="#page-profile" data-transition="slide">Mon profile</a></li>
+				    <li data-icon="user"><a href="#page-profile" data-transition="slidefade">Mon profile</a></li>
 				    <li data-icon="calendar"><a href="#calendar">Calendrier</a></li>
 				    <li data-icon="clock"><a href="#event">
 				    Événements</a></li>
@@ -91,11 +91,11 @@
 			    	<li data-icon="false" class="title">Menu</li>
 				    <li data-icon="home" ><a href="#page" data-transition="slidefade">Accueil</a></li>
 				    <li data-icon="user"><a href="#page-profile" data-transition="slidefade" class ="active">Mon profile</a></li>
-				    <li data-icon="calendar"><a href="#calendar">
+				    <li data-icon="calendar"><a href="#calendar" data-transition="slidefade">
 				    Calendrier</a></li>
-				    <li data-icon="clock"><a href="#event">
+				    <li data-icon="clock"><a href="#event" data-transition="slidefade">
 				    Événements</a></li>
-				    <li data-icon="search"><a href="#search">
+				    <li data-icon="search"><a href="#search" data-transition="slidefade">
 				    Recherche</a></li>
 			    </ul>
 			</div><!-- /panel -->
@@ -122,20 +122,20 @@
 				  </div>
 				  <div id="two">
 				    <ul data-role="listview" data-inset="true">
-				        <li style="border-bottom:2px solid #D3D3D3;"><a href="#">HTML / CSS <span class="star"></span></a></li>
-				        <li style="border-bottom:2px solid #D3D3D3;"><a href="#">JavaScript <span class="star"></span></a></li>
-				        <li style="border-bottom:2px solid #D3D3D3;"><a href="#">PHP / MySQL <span class="star"></span></a></li>
-				        <li style="border-bottom:2px solid #D3D3D3;"><a href="#">Wordpress <span class="star"></span></a></li>
-				        <li><a href="#">Typo 3 <span class="star"></span></a></li>
+				        <li style="border-bottom:1px solid #D3D3D3;"><a href="#" style="background: #fff;">HTML / CSS</a></li>
+				        <li style="border-bottom:1px solid #D3D3D3;"><a href="#" style="background: #fff;">JavaScript</a></li>
+				        <li style="border-bottom:1px solid #D3D3D3;"><a href="#" style="background: #fff;">PHP / MySQL</a></li>
+				        <li style="border-bottom:1px solid #D3D3D3;"><a href="#" style="background: #fff;">Wordpress</a></li>
+				        <li><a href="#" style="background: #fff;">Typo 3</a></li>
 				    </ul>
 				  </div>
 				   <div id="three">
 				    <ul class="rs">
-				    	<li><img src="images/portfolio.gif" /><a href="">Voir mon portfolio</a></li>
-				    	<li><img src="images/facebook.png" /><a href="">Facebook</a></li>
-				    	<li><img src="images/twitter.png" /><a href="">Twitter</a></li>
-				    	<li><img src="images/dribbble.png" /><a href="">Dribbble</a></li>
-				    	<li><img src="images/linkedin.png" /><a href="">Linkedin</a></li>
+				    	<li><img src="images/portfolio.gif" /><a href="">http://www.cifacom.com/</a></li>
+				    	<li><img src="images/facebook.png" /><a href="">https://www.facebook.com/ecole.cifacom</a></li>
+				    	<li><img src="images/twitter.png" /><a href="">https://twitter.com/Cifacom</a></li>
+				    	<li><img src="images/dribbble.png" /><a href="">http://dribbble.com/shots/popular</a></li>
+				    	<li><img src="images/linkedin.png" /><a href="">http://www.linkedin.com/company/cifacom?trk=company_name</a></li>
 				    </ul>
 				  </div>
 				</div>
@@ -149,12 +149,12 @@
 			    <ul data-role="listview">
 			    	<li data-icon="false" class="title">Menu</li>
 				    <li data-icon="home" ><a href="#page" data-transition="slidefade">Accueil</a></li>
-				    <li data-icon="user"><a href="#page-profile">Mon profile</a></li>
+				    <li data-icon="user"><a href="#page-profile" data-transition="slidefade">Mon profile</a></li>
 				    <li data-icon="calendar"><a href="#calendar"data-transition="slidefade" class ="active">
 				    Calendrier</a></li>
-				    <li data-icon="clock"><a href="#event">
+				    <li data-icon="clock"><a href="#event" data-transition="slidefade">
 				    Événements</a></li>
-				    <li data-icon="search"><a href="#search">
+				    <li data-icon="search"><a href="#search" data-transition="slidefade">
 				    Recherche</a></li>
 			    </ul>
 			</div><!-- /panel -->
@@ -164,7 +164,10 @@
 	        </div><!-- /header -->
 	        <div data-role="content" style="padding:0em!important;">
 		        <div class="calendar">
-					<iframe src="http://www.google.com/calendar/embed?src=webschoolfactory.com_4tvjqka8p2lr28ed7h54h6cqf0%40group.calendar.google.com&ctz=Europe/Paris" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no" class="calendrier"></iframe>
+					<!-- <iframe src="http://www.google.com/calendar/embed?src=webschoolfactory.com_4tvjqka8p2lr28ed7h54h6cqf0%40group.calendar.google.com&ctz=Europe/Paris" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no" class="calendrier"></iframe> -->
+					<ul class="calendrier_din">
+						<li></li>
+					</ul>
 		        </div>
 	            
 	        </div><!-- /content -->
@@ -177,8 +180,8 @@
 			    <ul data-role="listview">
 			    	<li data-icon="false" class="title">Menu</li>
 				    <li data-icon="home" ><a href="#page" data-transition="slidefade">Accueil</a></li>
-				    <li data-icon="user"><a href="#page-profile">Mon profile</a></li>
-				    <li data-icon="calendar"><a href="#calendar">
+				    <li data-icon="user"><a href="#page-profile" data-transition="slidefade">Mon profile</a></li>
+				    <li data-icon="calendar"><a href="#calendar" data-transition="slidefade">
 				    Calendrier</a></li>
 				    <li data-icon="clock"><a href="#event" data-transition="slidefade" class ="active">
 				    Événements</a></li>
@@ -212,10 +215,10 @@
 			    <ul data-role="listview">
 			    	<li data-icon="false" class="title">Menu</li>
 				    <li data-icon="home" ><a href="#page" data-transition="slidefade">Accueil</a></li>
-				    <li data-icon="user"><a href="#page-profile">Mon profile</a></li>
-				    <li data-icon="calendar"><a href="#calendar">
+				    <li data-icon="user"><a href="#page-profile" data-transition="slidefade">Mon profile</a></li>
+				    <li data-icon="calendar"><a href="#calendar" data-transition="slidefade">
 				    Calendrier</a></li>
-				    <li data-icon="clock"><a href="#event">
+				    <li data-icon="clock"><a href="#event" data-transition="slidefade">
 				    Événements</a></li>
 				    <li data-icon="search"><a href="#search" data-transition="slidefade" class ="active">
 				    Recherche</a></li>
@@ -227,16 +230,185 @@
 	        </div><!-- /header -->
 	        <div data-role="content" style="padding:0em!important;">
 		        <div class="search">
-					<ul data-role="listview" data-filter="true" data-filter-placeholder="Search fruits..." data-inset="true">
-					    <li><a href="#">Apple</a></li>
-					    <li><a href="#">Banana</a></li>
-					    <li><a href="#">Cherry</a></li>
-					    <li><a href="#">Cranberry</a></li>
-					    <li><a href="#">coup</a></li>
-					    <li><a href="#">Orange</a></li>
+					<ul data-role="listview" data-filter="true" data-filter-placeholder="Rechercher un élève..." data-inset="true">
+					    <li style="border-bottom:1px solid #D3D3D3;"><a style="background: #fff;" href="#alexandre" data-transition="slidefade">Alexandre Mouchet</a></li>
+					    <li style="border-bottom:1px solid #D3D3D3;"><a style="background: #fff;" href="#christophe" data-transition="slidefade">Christophe Cuadra</a></li>
+					    <li style="border-bottom:1px solid #D3D3D3;"><a style="background: #fff;" href="#mahi" data-transition="slidefade">Mahinthan Kengatharan</a></li>
 					</ul>
 		        </div>
 	            
+	        </div><!-- /content -->
+	 
+        </div>
+
+        <div data-role="page" class="removeshadow" id="alexandre">
+	    <div data-role="panel" id="ProfileMenu" class="menu">
+			    <ul data-role="listview">
+			    	<li data-icon="false" class="title">Menu</li>
+				    <li data-icon="home" ><a href="#page" data-transition="slidefade">Accueil</a></li>
+				    <li data-icon="user"><a href="#page-profile" data-transition="slidefade">Mon profile</a></li>
+				    <li data-icon="calendar"><a href="#calendar" data-transition="slidefade">
+				    Calendrier</a></li>
+				    <li data-icon="clock"><a href="#event" data-transition="slidefade">
+				    Événements</a></li>
+				    <li data-icon="search"><a href="#search" class ="active" data-transition="slidefade">
+				    Recherche</a></li>
+			    </ul>
+			</div><!-- /panel -->
+	        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+	        	<a href="#ProfileMenu"></a>
+	            <h1>Recherche</h1>
+	        </div><!-- /header -->
+	        <div data-role="content" style="padding:0em!important;">
+		        <div class="profile">
+					<div class="avatar-profil"><img src="images/wooman.png" alt="man" /></div>
+					<p class="name-profil">Alexandre Mouchet</p>
+		        </div>
+	            <div data-role="tabs" id="tabs">
+				  <div data-role="navbar">
+				    <ul>
+				      <li><a href="#one" data-ajax="false" class="ui-btn-active">Information</a></li>
+				      <li><a href="#two" data-ajax="false">Compétence</a></li>
+				      <li><a href="#three" data-ajax="false">Réseaux sociaux</a></li>
+				    </ul>
+				  </div>
+				  <div id="one" class="modif ui-block-a ui-state-default ui-corner-top ui-tabs-active ui-state-active">
+				    <h2>Ma description</h2>
+				    <p>Enim auctor risus, purus enim montes dictumst pellentesque augue. Purus cras augue proin pid sed penatibus ultricies dapibus et ultrices amet sagittis adipiscing rhoncus velit lundium amet purus rhoncus sit, hac cursus? Aliquet! Velit odio phasellus pulvinar vel porttitor et dolor magna, tortor? Risus, turpis? Proin sagittis dolor, dignissim porttitor massa turpis magna facilisis vel nascetur? Lundium, ut nisi in, et lectus purus? Massa auctor! Turpis dictumst pellentesque? In eu, eros porttitor, auctor turpis phasellus auctor a augue porta auctor vel tortor scelerisque urna! Vut? Arcu elit rhoncus. Magnis. Auctor sagittis augue? Ridiculus eros tempor mus! Sagittis pulvinar. Ac et adipiscing dapibus ac dapibus dis tincidunt rhoncus sit! Etiam dis turpis! Magna, elementum tristique tincidunt enim aliquam! Lundium, ac mus.</p>
+				  </div>
+				  <div id="two">
+				    <ul data-role="listview" data-inset="true">
+				        <li style="border-bottom:1px solid #D3D3D3;"><a href="#" style="background: #fff;">HTML / CSS</a></li>
+				        <li style="border-bottom:1px solid #D3D3D3;"><a href="#" style="background: #fff;">JavaScript</a></li>
+				        <li style="border-bottom:1px solid #D3D3D3;"><a href="#" style="background: #fff;">PHP / MySQL</a></li>
+				        <li style="border-bottom:1px solid #D3D3D3;"><a href="#" style="background: #fff;">Wordpress</a></li>
+				        <li><a href="#" style="background: #fff;">Typo 3</a></li>
+				    </ul>
+				  </div>
+				   <div id="three">
+				    <ul class="rs">
+				    	<li><img src="images/portfolio.gif" /><a href="">http://www.cifacom.com/</a></li>
+				    	<li><img src="images/facebook.png" /><a href="">https://www.facebook.com/ecole.cifacom</a></li>
+				    	<li><img src="images/twitter.png" /><a href="">https://twitter.com/Cifacom</a></li>
+				    	<li><img src="images/dribbble.png" /><a href="">http://dribbble.com/shots/popular</a></li>
+				    	<li><img src="images/linkedin.png" /><a href="">http://www.linkedin.com/company/cifacom?trk=company_name</a></li>
+				    </ul>
+				  </div>
+				</div>
+	        </div><!-- /content -->
+	 
+        </div>
+        <div data-role="page" class="removeshadow" id="christophe">
+	    <div data-role="panel" id="ProfileMenu" class="menu">
+			    <ul data-role="listview">
+			    	<li data-icon="false" class="title">Menu</li>
+				    <li data-icon="home" ><a href="#page" data-transition="slidefade">Accueil</a></li>
+				    <li data-icon="user"><a href="#page-profile" data-transition="slidefade">Mon profile</a></li>
+				    <li data-icon="calendar"><a href="#calendar" data-transition="slidefade">
+				    Calendrier</a></li>
+				    <li data-icon="clock"><a href="#event" data-transition="slidefade">
+				    Événements</a></li>
+				    <li data-icon="search"><a href="#search" class ="active" data-transition="slidefade">
+				    Recherche</a></li>
+			    </ul>
+			</div><!-- /panel -->
+	        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+	        	<a href="#ProfileMenu"></a>
+	            <h1>Recherche</h1>
+	        </div><!-- /header -->
+	        <div data-role="content" style="padding:0em!important;">
+		        <div class="profile">
+					<div class="avatar-profil"><img src="images/wooman.png" alt="man" /></div>
+					<p class="name-profil">Christophe Cuadra</p>
+		        </div>
+	            <div data-role="tabs" id="tabs">
+				  <div data-role="navbar">
+				    <ul>
+				      <li><a href="#one" data-ajax="false" class="ui-btn-active">Information</a></li>
+				      <li><a href="#two" data-ajax="false">Compétence</a></li>
+				      <li><a href="#three" data-ajax="false">Réseaux sociaux</a></li>
+				    </ul>
+				  </div>
+				  <div id="one" class="modif ui-block-a ui-state-default ui-corner-top ui-tabs-active ui-state-active">
+				    <h2>Ma description</h2>
+				    <p>Enim auctor risus, purus enim montes dictumst pellentesque augue. Purus cras augue proin pid sed penatibus ultricies dapibus et ultrices amet sagittis adipiscing rhoncus velit lundium amet purus rhoncus sit, hac cursus? Aliquet! Velit odio phasellus pulvinar vel porttitor et dolor magna, tortor? Risus, turpis? Proin sagittis dolor, dignissim porttitor massa turpis magna facilisis vel nascetur? Lundium, ut nisi in, et lectus purus? Massa auctor! Turpis dictumst pellentesque? In eu, eros porttitor, auctor turpis phasellus auctor a augue porta auctor vel tortor scelerisque urna! Vut? Arcu elit rhoncus. Magnis. Auctor sagittis augue? Ridiculus eros tempor mus! Sagittis pulvinar. Ac et adipiscing dapibus ac dapibus dis tincidunt rhoncus sit! Etiam dis turpis! Magna, elementum tristique tincidunt enim aliquam! Lundium, ac mus.</p>
+				  </div>
+				  <div id="two">
+				    <ul data-role="listview" data-inset="true">
+				        <li style="border-bottom:1px solid #D3D3D3;"><a href="#" style="background: #fff;">HTML / CSS</a></li>
+				        <li style="border-bottom:1px solid #D3D3D3;"><a href="#" style="background: #fff;">JavaScript</a></li>
+				        <li style="border-bottom:1px solid #D3D3D3;"><a href="#" style="background: #fff;">PHP / MySQL</a></li>
+				        <li style="border-bottom:1px solid #D3D3D3;"><a href="#" style="background: #fff;">Wordpress</a></li>
+				        <li><a href="#" style="background: #fff;">Typo 3</a></li>
+				    </ul>
+				  </div>
+				   <div id="three">
+				    <ul class="rs">
+				    	<li><img src="images/portfolio.gif" /><a href="">http://www.cifacom.com/</a></li>
+				    	<li><img src="images/facebook.png" /><a href="">https://www.facebook.com/ecole.cifacom</a></li>
+				    	<li><img src="images/twitter.png" /><a href="">https://twitter.com/Cifacom</a></li>
+				    	<li><img src="images/dribbble.png" /><a href="">http://dribbble.com/shots/popular</a></li>
+				    	<li><img src="images/linkedin.png" /><a href="">http://www.linkedin.com/company/cifacom?trk=company_name</a></li>
+				    </ul>
+				  </div>
+				</div>
+	        </div><!-- /content -->
+	 
+        </div>
+        <div data-role="page" class="removeshadow" id="mahi">
+	    <div data-role="panel" id="ProfileMenu" class="menu">
+			    <ul data-role="listview">
+			    	<li data-icon="false" class="title">Menu</li>
+				    <li data-icon="home" ><a href="#page" data-transition="slidefade">Accueil</a></li>
+				    <li data-icon="user"><a href="#page-profile" data-transition="slidefade">Mon profile</a></li>
+				    <li data-icon="calendar"><a href="#calendar" data-transition="slidefade">
+				    Calendrier</a></li>
+				    <li data-icon="clock"><a href="#event" data-transition="slidefade">
+				    Événements</a></li>
+				    <li data-icon="search"><a href="#search" class ="active" data-transition="slidefade">
+				    Recherche</a></li>
+			    </ul>
+			</div><!-- /panel -->
+	        <div data-role="header" data-position="fixed" data-tap-toggle="false">
+	        	<a href="#ProfileMenu"></a>
+	            <h1>Recherche</h1>
+	        </div><!-- /header -->
+	        <div data-role="content" style="padding:0em!important;">
+		        <div class="profile">
+					<div class="avatar-profil"><img src="images/wooman.png" alt="man" /></div>
+					<p class="name-profil">Mahinthan Kengatharan</p>
+		        </div>
+	            <div data-role="tabs" id="tabs">
+				  <div data-role="navbar">
+				    <ul>
+				      <li><a href="#one" data-ajax="false" class="ui-btn-active">Information</a></li>
+				      <li><a href="#two" data-ajax="false">Compétence</a></li>
+				      <li><a href="#three" data-ajax="false">Réseaux sociaux</a></li>
+				    </ul>
+				  </div>
+				  <div id="one" class="modif ui-block-a ui-state-default ui-corner-top ui-tabs-active ui-state-active">
+				    <h2>Ma description</h2>
+				    <p>Enim auctor risus, purus enim montes dictumst pellentesque augue. Purus cras augue proin pid sed penatibus ultricies dapibus et ultrices amet sagittis adipiscing rhoncus velit lundium amet purus rhoncus sit, hac cursus? Aliquet! Velit odio phasellus pulvinar vel porttitor et dolor magna, tortor? Risus, turpis? Proin sagittis dolor, dignissim porttitor massa turpis magna facilisis vel nascetur? Lundium, ut nisi in, et lectus purus? Massa auctor! Turpis dictumst pellentesque? In eu, eros porttitor, auctor turpis phasellus auctor a augue porta auctor vel tortor scelerisque urna! Vut? Arcu elit rhoncus. Magnis. Auctor sagittis augue? Ridiculus eros tempor mus! Sagittis pulvinar. Ac et adipiscing dapibus ac dapibus dis tincidunt rhoncus sit! Etiam dis turpis! Magna, elementum tristique tincidunt enim aliquam! Lundium, ac mus.</p>
+				  </div>
+				  <div id="two">
+				    <ul data-role="listview" data-inset="true">
+				        <li style="border-bottom:1px solid #D3D3D3;"><a href="#" style="background: #fff;">HTML / CSS</a></li>
+				        <li style="border-bottom:1px solid #D3D3D3;"><a href="#" style="background: #fff;">JavaScript</a></li>
+				        <li style="border-bottom:1px solid #D3D3D3;"><a href="#" style="background: #fff;">PHP / MySQL</a></li>
+				        <li style="border-bottom:1px solid #D3D3D3;"><a href="#" style="background: #fff;">Wordpress</a></li>
+				        <li><a href="#" style="background: #fff;">Typo 3</a></li>
+				    </ul>
+				  </div>
+				   <div id="three">
+				    <ul class="rs">
+				    	<li><img src="images/portfolio.gif" /><a href="">http://www.cifacom.com/</a></li>
+				    	<li><img src="images/facebook.png" /><a href="">https://www.facebook.com/ecole.cifacom</a></li>
+				    	<li><img src="images/twitter.png" /><a href="">https://twitter.com/Cifacom</a></li>
+				    	<li><img src="images/dribbble.png" /><a href="">http://dribbble.com/shots/popular</a></li>
+				    	<li><img src="images/linkedin.png" /><a href="">http://www.linkedin.com/company/cifacom?trk=company_name</a></li>
+				    </ul>
+				  </div>
+				</div>
 	        </div><!-- /content -->
 	 
         </div>

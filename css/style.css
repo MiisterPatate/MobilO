@@ -363,12 +363,17 @@ ul.rs li{
 	list-style-type: none;
 	margin-top: -11px;
 	clear: both;
+	border-bottom: 1px solid #D3D3D3;
+	padding-bottom: 20px;
 }
 
 ul.rs li a{
 	width: 60% !important;
 	display: inline-block;
 	margin-top: 24px;
+	font-weight: 300 !important;
+	text-decoration: none !important;
+	color: #333351 !important;
 }
 
 ul.rs li img{
@@ -378,4 +383,8 @@ ul.rs li img{
 
 .ui-navbar ul{
 	z-index: 5 !important;
+}
+
+#one{
+	background: #fff;
 }

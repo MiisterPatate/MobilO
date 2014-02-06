@@ -68,6 +68,7 @@ function getUserInfo() {
             console.log(calendar)
             for (var i=0; i<=50; i++){
                console.log(calendar.items[i].summary); 
+               $( "ul.calendrier-din" ).append( "<li>"+calendar.item[i].summary+"</li>" );
             }
             
             
