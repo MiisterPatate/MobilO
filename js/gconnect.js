@@ -50,7 +50,10 @@ function getUserInfo() {
                 $.session.set('usr', result.name);
                 $.session.set('id', result.id);
                 $.session.set('avatar', result.avatar);
-                //location.reload();
+                location.reload();
+                  setTimeout(function () {
+                     window.location.href = "index.html#page"; //will redirect to your blog page (an ex: blog.html)
+}               , 2000); //will call the function after 2 secs.
             }else{
                 alert('Seulment pour les étudiants de CIFACOM');
             }
@@ -59,10 +62,14 @@ function getUserInfo() {
         dataType: "jsonp"
     });
         $.ajax({
-        url: 'https://www.googleapis.com/calendar/v3/calendars/webschoolfactory.com_4tvjqka8p2lr28ed7h54h6cqf0@group.calendar.google.com/events?access_token=' + accessToken,
+        url: 'https://www.googleapis.com/calendar/v3/calendars/webschoolfactory.com_4tvjqka8p2lr28ed7h54h6cqf0%40group.calendar.google.com/events?access_token='+ accessToken,
         data: null,
         success: function(calendar) {
-            console.log(calendar);
+            console.log(calendar)
+            for (var i=0; i<=50; i++){
+               console.log(calendar.items[i].summary); 
+            }
+            
             
         },
         dataType: "jsonp"
